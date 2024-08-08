@@ -101,7 +101,7 @@ void verifyTest(void);
 #define TEST_FAIL_MESSAGE(message)                                                                 UNITY_TEST_FAIL(__LINE__, (message))
 #define TEST_FAIL()                                                                                UNITY_TEST_FAIL(__LINE__, NULL)
 #define TEST_IGNORE_MESSAGE(message)                                                               UNITY_TEST_IGNORE(__LINE__, (message))
-#define TEST_IGNORE()                                                                              UNITY_TEST_IGNORE(__LINE__, NULL)
+#define TEST_IGNORE()                                                                              // UNITY_TEST_IGNORE(__LINE__, NULL)
 #define TEST_MESSAGE(message)                                                                      UnityMessage((message), __LINE__)
 #define TEST_ONLY()
 #ifdef UNITY_INCLUDE_PRINT_FORMATTED
